@@ -59,13 +59,13 @@ Adafruit_VL53L0X lox7 = Adafruit_VL53L0X();
 
 //shutdown pins to initialize the range sensors
 
-int shdn1 = 3;
-int shdn2 = 4;
-int shdn3 = 5;
-int shdn4 = 6;
-int shdn5 = 7;
-int shdn6 = 8;
-int shdn7 = 9;
+int shdn1 = 6;
+int shdn2 = 7;
+int shdn3 = 8;
+int shdn4 = 9;
+int shdn5 = 10;
+int shdn6 = 11;
+int shdn7 = 12;
 
 SoftwareSerial VS1053_MIDI(0, 2); // TX only, do not use the 'rx' side
 // on a Mega/Leonardo you may have to change the pin to one that
@@ -73,7 +73,7 @@ SoftwareSerial VS1053_MIDI(0, 2); // TX only, do not use the 'rx' side
 
 //********************************************************
 //Lcd stuff
-const int rs = 47, en = 46, d4 = 4, d5 = 5, d6 = 6, d7 = 7; // Defines LCD ports
+const int rs = 47, en = 46, d2 = 2, d3 = 3, d4 = 4, d5 = 5; // Defines LCD ports
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);   // Creates an LCD object
 
 
